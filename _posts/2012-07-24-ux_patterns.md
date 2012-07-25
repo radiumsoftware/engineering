@@ -1,3 +1,31 @@
+## Handle Network Failure
+
+Applications depend on the API. The API would be up 100% of the time in
+a perfect world. In a perfect world you would never lose your internet
+connection. In a perfect world you would never leave the coverage zone.
+We don't live in a perfect world. There is PHP and we've all lost
+internet connections. The application should handle this gracefully. The
+user should know that something is not working. Gracefully means:
+
+* Display a UI telling the user there is a connection problem
+* Don't exit the current interaction. If a record is being added and it
+  cannot be saved allow the user to try again or wait and try again
+  later. **Don't lose their stuff!**
+
+## Handle Application Failure
+
+Users will find ways to crash your application and blow it up. It's just
+the way these things work. Appications must be robust enough to handle
+this. The most important thing here is: **Don't lose their stuff!**.
+There is no specific way to implement this. Applications can save input
+values locally so when the application is started again the view can be
+repopulated.
+
+## Start Where the User Left Off
+
+Save the user's current position when the applicatoin exists. Return to
+this view when the user starts the application again.
+
 ## Infinite Scrolling
 
 Infinite scrolling is common in applications. The implemenation
