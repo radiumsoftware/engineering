@@ -26,6 +26,17 @@ repopulated.
 Save the user's current position when the applicatoin exists. Return to
 this view when the user starts the application again.
 
+## Handle the Blank State
+
+It's common for developers to forget what happens when there is no data.
+Why? Because we add data and see what things look like. Don't forget the
+blank state. The blank state must accomplish two things:
+
+1. Tell the user there is nothing to display.
+2. Prompt the user for action to add something.
+
+Example: You have no todos today! Click here to add some.
+
 ## Infinite Scrolling
 
 Infinite scrolling is common in applications. The implemenation
