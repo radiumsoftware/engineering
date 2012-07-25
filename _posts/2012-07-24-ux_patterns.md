@@ -1,3 +1,17 @@
+## Take Advantage of the Initial Boot
+
+User's expect applications to respond to their interactions quickly. Our
+aim is to meet those expectations. There are different expectations and
+different points. User's understand that applications may require some
+initial setup. They also understand that their data is not there yet.
+This expectation changes once they've started using the application.
+Take advantage of expectation when the application is loaded for the
+very first time. You can take more time here to load data than you can
+at other points. Your application may have a simple initial view. Load
+the required data right away, then kick of requests to load in more
+data. User's will be more accepting here then they will be at any other
+time!
+
 ## Loading Screens are Antipattern
 
 Loading bars and screens indicate that the application was not ready to
