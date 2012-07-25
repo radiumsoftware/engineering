@@ -1,0 +1,20 @@
+---
+layout: default
+title: Radium Engineering Guidelines
+---
+
+<p>
+This page lays down rules of the road for building Radium applications.
+They represent everything we've learned building a modern multiplatform
+application. They've emerged from years of iterating through product
+development. They've emerged especially since we decided to make a
+single HTTP API and build all our clients on. A separate set of problems
+occur when when you're applications are dependent on HTTP. These
+documents catalogue problems and present solutions.
+</p>
+
+<h2>Sections</h2>
+
+{% for post in site.categories.blog %}
+  <p><a href="{{ post.url }}" title="{{ post.title}}">{{ post.title }}</a></p>
+{% endfor %}

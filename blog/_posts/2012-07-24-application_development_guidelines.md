@@ -1,3 +1,8 @@
+---
+title: Application Development Guidelines
+layout: default
+---
+
 ## Build a Boundary Between your Application and the API
 
 Your application may exist to compliment the API or do something the
@@ -18,4 +23,3 @@ store separate. This also means you can stub out the adapter when
 needed. Integration tests only query the store. You can implement a
 fixture adapter or an in-memory adapter for those. The important thing
 is that data storage and loading are separate.
-

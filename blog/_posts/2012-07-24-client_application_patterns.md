@@ -1,3 +1,8 @@
+---
+title: Client Application Patterns
+layout: default
+---
+
 All Radium applications are built on top of our HTTP API. This
 architecture creates common problems that are solved by applying a set
 of patterns. Apply these patterns when writing applications.

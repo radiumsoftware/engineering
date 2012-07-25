@@ -1,3 +1,8 @@
+---
+title: User Experience Patterns
+layout: default
+---
+
 ## Take Advantage of the Initial Boot
 
 User's expect applications to respond to their interactions quickly. Our
