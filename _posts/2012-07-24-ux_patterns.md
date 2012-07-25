@@ -1,3 +1,23 @@
+## Loading Screens are Antipattern
+
+Loading bars and screens indicate that the application was not ready to
+handle that interaction. Loading screens will have to be displayed at
+some point. This is a fact. Their use should be minimized. They make the
+user wait and do nothing else. Use smart data loading and other
+techniques to minimize them.
+
+## Use Animations to Mask Load Times
+
+Loading records usually takes the same amount of time. Use an animation
+that lasts that amount of time to mask loading. This way the user sees
+the application reacting and animating instead of loading bars. This
+creates a better preceived experience.
+
+Example: User wants to navigate to a new view that requires an API
+query. Use a sliding animation to slide the current view out and the new
+view in while the record is loading. If an API query takes 200ms, then
+make the animation last close to 200ms.
+
 ## Handle Network Failure
 
 Applications depend on the API. The API would be up 100% of the time in
