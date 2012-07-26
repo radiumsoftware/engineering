@@ -3,6 +3,13 @@ title: User Experience Patterns
 layout: default
 ---
 
+This document focuses solely on the end user experience. This is the
+**only** thing that truly matters. User don't care if your application
+is written using the latest and greatest or if it's written in straight
+up bytecode. They just need it work fast and correctly. We care about
+fast. We want uberfast. User's want fast. We want to impressive users
+with how fast the application is.
+
 ## Take Advantage of the Initial Boot
 
 User's expect applications to respond to their interactions quickly. Our
@@ -24,6 +31,18 @@ handle that interaction. Loading screens will have to be displayed at
 some point. This is a fact. Their use should be minimized. They make the
 user wait and do nothing else. Use smart data loading and other
 techniques to minimize them.
+
+## Use Smart Data Loading
+
+Applications should load additional data into their local store while
+not in use. Applications should be smart enough to know what the user's
+will do next. Say you have a parent and child association. One view is
+only about the parent. The next screen or view is about the child. The
+application should load the parent and child at the same time. This way
+when the use quickly moves to the child view the data is ready to local
+to prepare the view. Here's another example. You're retrieving a
+collection of parents. Retrieve the collection of children in the same
+or separate request.
 
 ## Use Animations to Mask Load Times
 
