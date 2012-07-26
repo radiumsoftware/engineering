@@ -8,7 +8,6 @@ class DeleteContentLength
   def call(env)
     status, headers, body = @app.call env
     headers.delete 'Content-length'
-    headers.delete 'Last-Modified'
     [status, headers, body]
   end
 end
